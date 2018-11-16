@@ -1,0 +1,10 @@
+/home/sdsuser/py3/lib/python3.5/site-packages/urllib3/connectionpool.py:847: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+Traceback (most recent call last):
+  File "webapitest.py", line 84, in <module>
+    get_response = signed_common(xstream_request_uri, xstream_api_public_key, xstream_api_private_key, r_type, req_body, verify_https_cert)
+  File "webapitest.py", line 54, in signed_common
+    res.raise_for_status()
+  File "/home/sdsuser/py3/lib/python3.5/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://mc-cloud.samsungsds.com/api/v1.3/PerformanceMetric
